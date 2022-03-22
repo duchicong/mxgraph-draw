@@ -1,5 +1,35 @@
 import factory from 'mxgraph'
+// console.log(new factory())
+const {
+    mxGraph,
+    mxConnectionHandler,
+    mxEvent,
+    mxCell,
+    mxRubberband,
+    mxGeometry,
+    mxShape,
+    mxConnectionConstraint,
+    mxPoint,
+    mxPolyline,
+    mxClient,
+    mxUtils,
+    mxCellState,
+    mxConstants
+} = new factory()
 
-const { mxGraph, mxEvent, mxCell, mxRubberband, mxShape, mxConnectionConstraint, mxPoint, mxPolyline, mxClient, mxUtils, mxCellState } = new factory()
-
-export { mxGraph, mxEvent, mxCell, mxRubberband, mxShape, mxConnectionConstraint, mxPoint, mxPolyline, mxClient, mxUtils, mxCellState }
+export {
+    mxGraph,
+    mxConnectionHandler,
+    mxEvent,
+    mxCell,
+    mxRubberband,
+    mxGeometry,
+    mxShape,
+    mxConnectionConstraint,
+    mxPoint,
+    mxPolyline,
+    mxClient,
+    mxUtils,
+    mxCellState,
+    mxConstants
+}
