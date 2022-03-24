@@ -4,7 +4,7 @@ import GraphEventHandler from "./GraphEventHandler";
 export default class Graph extends mxGraph {
     constructor (container) {
         super(container);
-        this.eventHandler = new GraphEventHandler(this)
+        this.eventHandler = new GraphEventHandler(this);
     }
 
     getAllConnectionConstraints = (terminal, source) => {
@@ -39,7 +39,6 @@ export default class Graph extends mxGraph {
      * style - Optional string that defines the cell style.
      */
     createEdge = function(parent, id, value, source, target, style) {
-        console.log('style ', style)
         // Creates the edge
         var edge = new mxCell(value, new mxGeometry(), style);
         edge.setId(id);
