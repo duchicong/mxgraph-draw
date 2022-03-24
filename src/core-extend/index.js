@@ -13,9 +13,11 @@ import LayoutManager from "./LayoutManager";
 import Point from "./Point";
 import GWindow from "./GWindow";
 import CellRenderer from "./CellOverlay";
+import Cell from "./Cell";
 
 export {
     Graph,
+    Cell,
     Polyline,
     Shape,
     CellState,
