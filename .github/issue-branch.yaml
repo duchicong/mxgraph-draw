@@ -1,0 +1,11 @@
+#
+# Configuation: https://github.com/robvanderleek/create-issue-branch#branch-names
+#
+
+
+# The default mode is "auto", meaning a new issue branch is created after an issue is assigned.
+mode: auto
+# By default the app comments on the issue after creating a branch.
+silent: true
+# branch name config
+branchName: short
