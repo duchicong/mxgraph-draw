@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
 
 export default class Default extends React.Component {
 
@@ -11,7 +10,7 @@ export default class Default extends React.Component {
                 {!this.isHome() ? (
                     <div className="nav-block">
                         <div className="go-home-block">
-                            <NavLink to='/' className='btn-go-home'>Go Home</NavLink>
+                            <a href='/' className='btn-go-home'>Go Home</a>
                         </div>
                     </div>
                 ) : ''}

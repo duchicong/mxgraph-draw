@@ -1,13 +1,17 @@
 import React from 'react'
 
 export default class WrapperInfomation extends React.Component {
-    attributes = ['author', 'email', 'source', 'link', 'title', 'description', 'example']
+    attributes = ['author', 'email', 'source', 'link', 'title', 'description', 'example', 'category']
 
     /* handler convert string to capitalize */
     capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
+    categoryRenderer () {
+
+    }
+    
     /* handle wrapper infocation */
     handlerRenderer = (data) => {
         if (!data) return
@@ -20,6 +24,8 @@ export default class WrapperInfomation extends React.Component {
                             {this.capitalizeFirstLetter(key)}: <a href={value} className={key}>{this.capitalizeFirstLetter(value)}</a>
                         </p>
                     )
+                } else if (key === 'category') {
+
                 } else
                     elements.push(
                         <p key={key}>

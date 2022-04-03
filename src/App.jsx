@@ -1,12 +1,15 @@
 import RouteManagement from './routes/RouteManagement'
 import React from 'react'
+import ErrorBoundary from './ErrorBoundary'
 import './App.css'
 
 class App extends React.Component {
   render () {
     return (
       <div className="App">
-        <RouteManagement />
+        <ErrorBoundary>
+          <RouteManagement />
+        </ErrorBoundary>
       </div>
     )
   }
